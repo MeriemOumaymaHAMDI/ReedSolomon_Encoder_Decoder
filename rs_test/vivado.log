@@ -1,0 +1,245 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 13 17:56:57 2021
+# Process ID: 6506
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test
+# Command line: vivado
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.log
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 7113.055 ; gain = 37.035 ; free physical = 3801 ; free virtual = 7086
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rs_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj rs_tb_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+xelab -wto 48b1d4427d4f4545a384b1572d0d0941 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rs_tb_behav xil_defaultlib.rs_tb -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 48b1d4427d4f4545a384b1572d0d0941 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rs_tb_behav xil_defaultlib.rs_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7140.199 ; gain = 0.000 ; free physical = 3624 ; free virtual = 6984
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rs_tb_behav -key {Behavioral:sim_1:Functional:rs_tb} -tclbatch {rs_tb.tcl} -view {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg
+source rs_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rs_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 7233.016 ; gain = 92.816 ; free physical = 3616 ; free virtual = 6960
+run 1000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Jan 13 18:00:08 2021] Launched synth_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project test_Simulation /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+add_files -norecurse {/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd /home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd /home/mayma/Downloads/simple_rs-master/vhdl/gf.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder_tb.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd /home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd /home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd /home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsUtil.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd /home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/test_Simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rs_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/test_Simulation.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj rs_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/gf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calcErrors'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calcSyndromes'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsUtil.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'chien_search'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'correctErrors'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mea'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsDecoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsDecoderWrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsEncoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsEncoderWrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsFeeder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsFifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsOutputStage'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rs_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'start2valid'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rs_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/test_Simulation.sim/sim_1/behav/xsim'
+xelab -wto d99eb2c35bb6471283fbebc6c7b6e819 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rs_tb_behav xil_defaultlib.rs_tb -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto d99eb2c35bb6471283fbebc6c7b6e819 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rs_tb_behav xil_defaultlib.rs_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.gf
+Compiling package xil_defaultlib.rsutil
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=9,depth=2)\]
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=8,depth=209)\]
+Compiling architecture rtl of entity xil_defaultlib.rsFeeder [\rsFeeder(width=8,inputlength=20...]
+Compiling architecture rtl of entity xil_defaultlib.rsEncoder [\rsEncoder(m=8,n=254,k=204)\]
+Compiling architecture rtl of entity xil_defaultlib.start2valid [\start2valid(cwidth=8,width=8,le...]
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=9,depth=417)\]
+Compiling architecture rtl of entity xil_defaultlib.rsOutputStage [\rsOutputStage(width=8,inblockle...]
+Compiling architecture rtl of entity xil_defaultlib.rsEncoderWrapper [rsencoderwrapper_default]
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=8,depth=2540)\]
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=8,depth=259)\]
+Compiling architecture rtl of entity xil_defaultlib.rsFeeder [\rsFeeder(width=8,inputlength=25...]
+Compiling architecture rtl of entity xil_defaultlib.calcSyndromes [\calcSyndromes(m=8,n=254,k=204,p...]
+Compiling architecture rtl of entity xil_defaultlib.mea [\mea(m=8,n=254,k=204,primpoly=28...]
+Compiling architecture rtl of entity xil_defaultlib.chien_search [\chien_search(alpha=142,polylen=...]
+Compiling architecture rtl of entity xil_defaultlib.calcErrors [\calcErrors(m=8,n=254,k=204,prim...]
+Compiling architecture rtl of entity xil_defaultlib.rs_ram [\rs_ram(depth=924)\]
+Compiling architecture rtl of entity xil_defaultlib.rs_ram [\rs_ram(depth=508)\]
+Compiling architecture rtl of entity xil_defaultlib.correctErrors [\correctErrors(m=8,n=254,k=204)\]
+Compiling architecture rtl of entity xil_defaultlib.rsDecoder [\rsDecoder(m=8,n=254,k=204)\]
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=9,depth=1191)\]
+Compiling architecture rtl of entity xil_defaultlib.rsFifo [\rsFifo(width=9,depth=5)\]
+Compiling architecture rtl of entity xil_defaultlib.rsOutputStage [\rsOutputStage(width=8,inblockle...]
+Compiling architecture rtl of entity xil_defaultlib.rsDecoderWrapper [rsdecoderwrapper_default]
+Compiling architecture behavior of entity xil_defaultlib.rs_tb
+Built simulation snapshot rs_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/test_Simulation.sim/sim_1/behav/xsim/xsim.dir/rs_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 13 18:04:27 2021...
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 7234.152 ; gain = 0.000 ; free physical = 3641 ; free virtual = 7035
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/test_Simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rs_tb_behav -key {Behavioral:sim_1:Functional:rs_tb} -tclbatch {rs_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source rs_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rs_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 7300.051 ; gain = 65.898 ; free physical = 3607 ; free virtual = 7001
+run 1000 ns
+run 1000 ms
+run: Time (s): cpu = 00:01:22 ; elapsed = 00:14:51 . Memory (MB): peak = 7300.051 ; gain = 0.000 ; free physical = 3138 ; free virtual = 6834
+run 1000 us
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:01:03 . Memory (MB): peak = 7300.051 ; gain = 0.000 ; free physical = 3153 ; free virtual = 6850
+run 100 us
+run: Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:06 . Memory (MB): peak = 7300.051 ; gain = 0.000 ; free physical = 3145 ; free virtual = 6845
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/ip_root'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_1
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_2
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_3
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_4
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_5
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - decoder_dma
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - encoder_dma
+Adding component instance block -- dsumorok.com:user:rsDecoderWrapper:1.0 - rsDecoderWrapper_0
+Adding component instance block -- dsumorok.com:user:rsEncoderWrapper:1.0 - rsEncoderWrapper_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Successfully read diagram <system> from BD file </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 7442.250 ; gain = 0.000 ; free physical = 2833 ; free virtual = 6548
+set_property location {1.5 209 370} [get_bd_cells clk_wiz]
+save_wave_config {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/rs_tb_behav.wcfg}
+current_project test_Simulation
+add_files -fileset sim_1 -norecurse /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/rs_tb_behav.wcfg
+set_property xsim.view /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/rs_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 13 18:34:30 2021...

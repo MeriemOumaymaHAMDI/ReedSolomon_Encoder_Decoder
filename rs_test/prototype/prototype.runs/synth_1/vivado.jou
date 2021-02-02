@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 13 18:00:10 2021
+# Process ID: 7584
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1
+# Command line: vivado -log rs_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rs_tb.tcl
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1/rs_tb.vds
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source rs_tb.tcl -notrace

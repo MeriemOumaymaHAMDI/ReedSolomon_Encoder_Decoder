@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../rs_test.ip_user_files/bd/system/ip/system_decoder_dma_0/sim/system_decoder_dma_0.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ip/system_encoder_dma_0/sim/system_encoder_dma_0.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/gf.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/calcErrors.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/calcSyndromes.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rsUtil.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/chien_search.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/correctErrors.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/mea.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rsDecoder.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rsFeeder.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rsFifo.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rsOutputStage.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rs_ram.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/start2valid.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/0c4f/src/rsDecoderWrapper.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ip/system_rsDecoderWrapper_0_0/sim/system_rsDecoderWrapper_0_0.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/be8f/src/rsEncoder.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ipshared/be8f/src/rsEncoderWrapper.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ip/system_rsEncoderWrapper_0_0/sim/system_rsEncoderWrapper_0_0.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" \
+"../../../../rs_test.ip_user_files/bd/system/sim/system.vhd" \
+
+# Do not sort compile order
+nosort

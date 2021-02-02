@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../vhdl/gf.vhd" \
+"../../../../../../../vhdl/calcErrors.vhd" \
+"../../../../../../../vhdl/calcSyndromes.vhd" \
+"../../../../../../../vhdl/rsUtil.vhd" \
+"../../../../../../../vhdl/chien_search.vhd" \
+"../../../../../../../vhdl/correctErrors.vhd" \
+"../../../../../../../vhdl/mea.vhd" \
+"../../../../../../../vhdl/rsDecoder.vhd" \
+"../../../../../../../vhdl/rsDecoderWrapper.vhd" \
+"../../../../../../../vhdl/rsEncoder.vhd" \
+"../../../../../../../vhdl/rsEncoderWrapper.vhd" \
+"../../../../../../../vhdl/rsFeeder.vhd" \
+"../../../../../../../vhdl/rsFifo.vhd" \
+"../../../../../../../vhdl/rsOutputStage.vhd" \
+"../../../../../../../vhdl/rs_ram.vhd" \
+"../../../../../../../vhdl/start2valid.vhd" \
+"../../../../../../../vhdl/rs_tb.vhd" \
+
+# Do not sort compile order
+nosort

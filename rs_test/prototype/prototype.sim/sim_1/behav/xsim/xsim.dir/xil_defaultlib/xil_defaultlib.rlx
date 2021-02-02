@@ -1,0 +1,21 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd,1493511494,vhdl,,,,calcerrors,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd,1493511494,vhdl,,,,calcsyndromes,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd,1493511494,vhdl,,,,chien_search,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd,1493511494,vhdl,,,,correcterrors,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/gf.vhd,1493511494,vhdl,/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd,,,gf,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd,1493511494,vhdl,,,,mea,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd,1493511494,vhdl,,,,rsdecoder,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd,1493511494,vhdl,,,,rsdecoderwrapper,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd,1493511494,vhdl,,,,rsencoder,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd,1493511494,vhdl,,,,rsencoderwrapper,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd,1493511494,vhdl,,,,rsfeeder,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd,1493511494,vhdl,,,,rsfifo,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd,1493511494,vhdl,,,,rsoutputstage,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rsUtil.vhd,1493511494,vhdl,/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd;/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd,,,rsutil,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd,1493511494,vhdl,,,,rs_ram,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd,1493511494,vhdl,,,,rs_tb,,,,,,,,
+/home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd,1493511494,vhdl,,,,start2valid,,,,,,,,

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="rs_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="gf" />
+            <top_module name="rs_tb" />
+            <top_module name="rsutil" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="42542500fs"></ZoomStartTime>
+      <ZoomEndTime time="42632001fs"></ZoomEndTime>
+      <Cursor1Time time="16235320fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="242"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject type="logic" fp_name="/rs_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rs_tb/encoderIn">
+      <obj_property name="ElementShortName">encoderIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">encoderIn[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/encoderInValid">
+      <obj_property name="ElementShortName">encoderInValid</obj_property>
+      <obj_property name="ObjectShortName">encoderInValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/encoderInReady">
+      <obj_property name="ElementShortName">encoderInReady</obj_property>
+      <obj_property name="ObjectShortName">encoderInReady</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/encoderInLast">
+      <obj_property name="ElementShortName">encoderInLast</obj_property>
+      <obj_property name="ObjectShortName">encoderInLast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rs_tb/encoderOut">
+      <obj_property name="ElementShortName">encoderOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">encoderOut[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/encoderOutValid">
+      <obj_property name="ElementShortName">encoderOutValid</obj_property>
+      <obj_property name="ObjectShortName">encoderOutValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/encoderOutReady">
+      <obj_property name="ElementShortName">encoderOutReady</obj_property>
+      <obj_property name="ObjectShortName">encoderOutReady</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/encoderOutLast">
+      <obj_property name="ElementShortName">encoderOutLast</obj_property>
+      <obj_property name="ObjectShortName">encoderOutLast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rs_tb/decoderIn">
+      <obj_property name="ElementShortName">decoderIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">decoderIn[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/decoderInValid">
+      <obj_property name="ElementShortName">decoderInValid</obj_property>
+      <obj_property name="ObjectShortName">decoderInValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/decoderInReady">
+      <obj_property name="ElementShortName">decoderInReady</obj_property>
+      <obj_property name="ObjectShortName">decoderInReady</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/decoderInLast">
+      <obj_property name="ElementShortName">decoderInLast</obj_property>
+      <obj_property name="ObjectShortName">decoderInLast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rs_tb/decoderOut">
+      <obj_property name="ElementShortName">decoderOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">decoderOut[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/decoderOutValid">
+      <obj_property name="ElementShortName">decoderOutValid</obj_property>
+      <obj_property name="ObjectShortName">decoderOutValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/decoderOutReady">
+      <obj_property name="ElementShortName">decoderOutReady</obj_property>
+      <obj_property name="ObjectShortName">decoderOutReady</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/decoderOutLast">
+      <obj_property name="ElementShortName">decoderOutLast</obj_property>
+      <obj_property name="ObjectShortName">decoderOutLast</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/decoderWordCount">
+      <obj_property name="ElementShortName">decoderWordCount</obj_property>
+      <obj_property name="ObjectShortName">decoderWordCount</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rs_tb/fifoDataIn">
+      <obj_property name="ElementShortName">fifoDataIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifoDataIn[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rs_tb/fifoDataOut">
+      <obj_property name="ElementShortName">fifoDataOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifoDataOut[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/readFifo">
+      <obj_property name="ElementShortName">readFifo</obj_property>
+      <obj_property name="ObjectShortName">readFifo</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rs_tb/writeFifo">
+      <obj_property name="ElementShortName">writeFifo</obj_property>
+      <obj_property name="ObjectShortName">writeFifo</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/feedCount">
+      <obj_property name="ElementShortName">feedCount</obj_property>
+      <obj_property name="ObjectShortName">feedCount</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/outputCount">
+      <obj_property name="ElementShortName">outputCount</obj_property>
+      <obj_property name="ObjectShortName">outputCount</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/errorCount">
+      <obj_property name="ElementShortName">errorCount</obj_property>
+      <obj_property name="ObjectShortName">errorCount</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/errorStartIndex">
+      <obj_property name="ElementShortName">errorStartIndex</obj_property>
+      <obj_property name="ObjectShortName">errorStartIndex</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/count">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/CLK_PER">
+      <obj_property name="ElementShortName">CLK_PER</obj_property>
+      <obj_property name="ObjectShortName">CLK_PER</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/M">
+      <obj_property name="ElementShortName">M</obj_property>
+      <obj_property name="ObjectShortName">M</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/n">
+      <obj_property name="ElementShortName">n</obj_property>
+      <obj_property name="ObjectShortName">n</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/k">
+      <obj_property name="ElementShortName">k</obj_property>
+      <obj_property name="ObjectShortName">k</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/primPoly">
+      <obj_property name="ElementShortName">primPoly</obj_property>
+      <obj_property name="ObjectShortName">primPoly</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/alpha">
+      <obj_property name="ElementShortName">alpha</obj_property>
+      <obj_property name="ObjectShortName">alpha</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/feedPeriod">
+      <obj_property name="ElementShortName">feedPeriod</obj_property>
+      <obj_property name="ObjectShortName">feedPeriod</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/outputPeriod">
+      <obj_property name="ElementShortName">outputPeriod</obj_property>
+      <obj_property name="ObjectShortName">outputPeriod</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/inputLength">
+      <obj_property name="ElementShortName">inputLength</obj_property>
+      <obj_property name="ObjectShortName">inputLength</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/outputParity">
+      <obj_property name="ElementShortName">outputParity</obj_property>
+      <obj_property name="ObjectShortName">outputParity</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/extraCycles">
+      <obj_property name="ElementShortName">extraCycles</obj_property>
+      <obj_property name="ObjectShortName">extraCycles</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/Q">
+      <obj_property name="ElementShortName">Q</obj_property>
+      <obj_property name="ObjectShortName">Q</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/rs_tb/t">
+      <obj_property name="ElementShortName">t</obj_property>
+      <obj_property name="ObjectShortName">t</obj_property>
+   </wvobject>
+</wave_config>

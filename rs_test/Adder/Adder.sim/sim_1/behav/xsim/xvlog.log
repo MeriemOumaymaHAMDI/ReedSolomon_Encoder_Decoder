@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mayma/Desktop/AdderTest/Adder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mayma/Desktop/AdderTest/Adder32_Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_TestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/Adder/Adder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 13 17:56:57 2021
+# Process ID: 6506
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test
+# Command line: vivado
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.log
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg
+source rs_tb.tcl
+run 1000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+close_project
+create_project test_Simulation /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation -part xc7z020clg400-1
+add_files -norecurse {/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd /home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd /home/mayma/Downloads/simple_rs-master/vhdl/gf.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder_tb.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd /home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd /home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd /home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsUtil.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd /home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source rs_tb.tcl
+run 1000 ns
+run 1000 ms
+run 1000 us
+run 100 us
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd}
+set_property location {1.5 209 370} [get_bd_cells clk_wiz]
+save_wave_config {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/rs_tb_behav.wcfg}
+current_project test_Simulation
+add_files -fileset sim_1 -norecurse /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/rs_tb_behav.wcfg
+set_property xsim.view /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/test_Simulation/rs_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+close_project

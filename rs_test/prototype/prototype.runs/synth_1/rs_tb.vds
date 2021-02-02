@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 13 18:00:10 2021
+# Process ID: 7584
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1
+# Command line: vivado -log rs_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rs_tb.tcl
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1/rs_tb.vds
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source rs_tb.tcl -notrace
+Command: synth_design -top rs_tb -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7663
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2149.199 ; gain = 0.000 ; free physical = 2980 ; free virtual = 6320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rs_tb' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:32]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rsEncoderWrapper' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd:31' bound to instance 'encoder_i' of component 'rsEncoderWrapper' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'rsEncoderWrapper' [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd:51]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter inputLength bound to: 204 - type: integer 
+	Parameter outputLength bound to: 254 - type: integer 
+INFO: [Synth 8-3491] module 'rsFeeder' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:28' bound to instance 'feeder_i' of component 'rsFeeder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'rsFeeder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:48]
+	Parameter width bound to: 8 - type: integer 
+	Parameter inputLength bound to: 204 - type: integer 
+	Parameter outputLength bound to: 254 - type: integer 
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'countFifo' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo' (1#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 209 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'fifo_i' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'rsFifo__parameterized1' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 209 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo__parameterized1' (1#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'rsFeeder' (2#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:48]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rsEncoder' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd:31' bound to instance 'encoder_i' of component 'rsEncoder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'rsEncoder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd:47]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsEncoder' (3#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd:47]
+	Parameter width bound to: 8 - type: integer 
+	Parameter inBlockLength bound to: 204 - type: integer 
+	Parameter outBlockLength bound to: 254 - type: integer 
+	Parameter fifoDepth bound to: 314 - type: integer 
+INFO: [Synth 8-3491] module 'rsOutputStage' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:28' bound to instance 'outputStage_i' of component 'rsOutputStage' [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'rsOutputStage' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:51]
+	Parameter width bound to: 8 - type: integer 
+	Parameter inBlockLength bound to: 204 - type: integer 
+	Parameter outBlockLength bound to: 254 - type: integer 
+	Parameter fifoDepth bound to: 314 - type: integer 
+	Parameter cWidth bound to: 8 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter length bound to: 254 - type: integer 
+INFO: [Synth 8-3491] module 'start2valid' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd:28' bound to instance 'start2valid_i' of component 'start2valid' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'start2valid' [/home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd:43]
+	Parameter cWidth bound to: 8 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter length bound to: 254 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start2valid' (4#1) [/home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 417 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'outputFifo' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'rsFifo__parameterized3' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 417 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo__parameterized3' (4#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'countFifo' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'rsOutputStage' (5#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rsEncoderWrapper' (6#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd:51]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 2540 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'outFifo_i' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'rsFifo__parameterized6' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 2540 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo__parameterized6' (6#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter outputParity bound to: 1 - type: bool 
+	Parameter extraCycles bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'rsDecoderWrapper' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd:32' bound to instance 'decoder_i' of component 'rsDecoderWrapper' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'rsDecoderWrapper' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd:54]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter outputParity bound to: 1 - type: bool 
+	Parameter extraCycles bound to: 0 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter inputLength bound to: 254 - type: integer 
+	Parameter outputLength bound to: 254 - type: integer 
+INFO: [Synth 8-3491] module 'rsFeeder' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:28' bound to instance 'feeder_i' of component 'rsFeeder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'rsFeeder__parameterized1' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:48]
+	Parameter width bound to: 8 - type: integer 
+	Parameter inputLength bound to: 254 - type: integer 
+	Parameter outputLength bound to: 254 - type: integer 
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'countFifo' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:148]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 259 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'fifo_i' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'rsFifo__parameterized8' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 259 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo__parameterized8' (6#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'rsFeeder__parameterized1' (6#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd:48]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter extraCycles bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'rsDecoder' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:31' bound to instance 'decoder_i' of component 'rsDecoder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'rsDecoder' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:48]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 0 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter extraCycles bound to: 0 - type: integer 
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'calcSyndromes' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd:31' bound to instance 'syndromes_i' of component 'calcSyndromes' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'calcSyndromes' [/home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd:47]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'calcSyndromes' (7#1) [/home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd:47]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter extraCycles bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mea' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd:31' bound to instance 'mea_i' of component 'mea' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'mea' [/home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd:49]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter extraCycles bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mea' (8#1) [/home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd:49]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'calcErrors' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:31' bound to instance 'errors_i' of component 'calcErrors' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'calcErrors' [/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:48]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter alpha bound to: 2 - type: integer 
+	Parameter alpha bound to: 142 - type: integer 
+	Parameter M bound to: 8 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter polyLen bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'chien_search' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd:32' bound to instance 'evalEl' of component 'chien_search' [/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'chien_search' [/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd:47]
+	Parameter alpha bound to: 142 - type: integer 
+	Parameter M bound to: 8 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter polyLen bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'chien_search' (9#1) [/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd:47]
+	Parameter alpha bound to: 142 - type: integer 
+	Parameter M bound to: 8 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter polyLen bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'chien_search' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd:32' bound to instance 'evalNum' of component 'chien_search' [/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:207]
+	Parameter alpha bound to: 142 - type: integer 
+	Parameter M bound to: 8 - type: integer 
+	Parameter primPoly bound to: 285 - type: integer 
+	Parameter polyLen bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'chien_search' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd:32' bound to instance 'evalDenom' of component 'chien_search' [/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:221]
+CRITICAL WARNING: [Synth 8-5550] found explicit dontcare in slice;  simulation mismatch may occur [/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:256]
+INFO: [Synth 8-256] done synthesizing module 'calcErrors' (10#1) [/home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd:48]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+INFO: [Synth 8-3491] module 'correctErrors' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd:32' bound to instance 'correct_i' of component 'correctErrors' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'correctErrors' [/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd:48]
+	Parameter M bound to: 8 - type: integer 
+	Parameter n bound to: 254 - type: integer 
+	Parameter k bound to: 204 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 924 - type: integer 
+INFO: [Synth 8-3491] module 'rs_ram' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd:28' bound to instance 'inRam_i' of component 'rs_ram' [/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'rs_ram' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd:41]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 924 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rs_ram' (11#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd:41]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 508 - type: integer 
+INFO: [Synth 8-3491] module 'rs_ram' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd:28' bound to instance 'reorderRam_i' of component 'rs_ram' [/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'rs_ram__parameterized1' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd:41]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 508 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rs_ram__parameterized1' (11#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'correctErrors' (12#1) [/home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'rsDecoder' (13#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd:48]
+	Parameter width bound to: 8 - type: integer 
+	Parameter inBlockLength bound to: 254 - type: integer 
+	Parameter outBlockLength bound to: 254 - type: integer 
+	Parameter fifoDepth bound to: 1188 - type: integer 
+INFO: [Synth 8-3491] module 'rsOutputStage' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:28' bound to instance 'outputStage_i' of component 'rsOutputStage' [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'rsOutputStage__parameterized1' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:51]
+	Parameter width bound to: 8 - type: integer 
+	Parameter inBlockLength bound to: 254 - type: integer 
+	Parameter outBlockLength bound to: 254 - type: integer 
+	Parameter fifoDepth bound to: 1188 - type: integer 
+	Parameter cWidth bound to: 8 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter length bound to: 254 - type: integer 
+INFO: [Synth 8-3491] module 'start2valid' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd:28' bound to instance 'start2valid_i' of component 'start2valid' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:121]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 1191 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'outputFifo' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'rsFifo__parameterized10' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 1191 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo__parameterized10' (13#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'rsFifo' declared at '/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:28' bound to instance 'countFifo' of component 'rsFifo' [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'rsFifo__parameterized12' [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+	Parameter width bound to: 9 - type: integer 
+	Parameter depth bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rsFifo__parameterized12' (13#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'rsOutputStage__parameterized1' (13#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rsDecoderWrapper' (14#1) [/home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd:54]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:210]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:220]
+ERROR: [Synth 8-27] non-clocking wait statement not supported [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:224]
+ERROR: [Synth 8-285] failed synthesizing module 'rs_tb' [/home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd:32]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 2564.105 ; gain = 414.906 ; free physical = 2716 ; free virtual = 6058
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 2 Warnings, 1 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 13 18:01:09 2021...

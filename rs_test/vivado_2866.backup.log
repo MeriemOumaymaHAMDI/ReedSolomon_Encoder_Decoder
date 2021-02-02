@@ -1,0 +1,222 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 13 14:23:20 2021
+# Process ID: 2866
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test
+# Command line: vivado
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.log
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 6989.086 ; gain = 32.031 ; free physical = 3402 ; free virtual = 7905
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rs_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj rs_tb_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+xelab -wto 48b1d4427d4f4545a384b1572d0d0941 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rs_tb_behav xil_defaultlib.rs_tb -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 48b1d4427d4f4545a384b1572d0d0941 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rs_tb_behav xil_defaultlib.rs_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7007.227 ; gain = 0.000 ; free physical = 3300 ; free virtual = 7887
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rs_tb_behav -key {Behavioral:sim_1:Functional:rs_tb} -tclbatch {rs_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source rs_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rs_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 7100.043 ; gain = 92.816 ; free physical = 3282 ; free virtual = 7881
+run 1000 us
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:01:07 . Memory (MB): peak = 7100.043 ; gain = 0.000 ; free physical = 3229 ; free virtual = 7845
+save_wave_config {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg
+set_property xsim.view /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg [get_filesets sim_1]
+save_wave_config {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg}
+launch_runs synth_1 -jobs 4
+[Wed Jan 13 14:40:56 2021] Launched synth_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.runs/synth_1/runme.log
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/ip_root'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7110.184 ; gain = 10.141 ; free physical = 2507 ; free virtual = 7487
+update_compile_order -fileset sources_1
+open_bd_design {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_1
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_2
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_3
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_4
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_converter_5
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - decoder_dma
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - encoder_dma
+Adding component instance block -- dsumorok.com:user:rsDecoderWrapper:1.0 - rsDecoderWrapper_0
+Adding component instance block -- dsumorok.com:user:rsEncoderWrapper:1.0 - rsEncoderWrapper_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Successfully read diagram <system> from BD file </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 7286.270 ; gain = 0.000 ; free physical = 2395 ; free virtual = 7406
+regenerate_bd_layout
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to kill process with pid <9824> on the remote host No such file or directory
+
+launch_runs synth_1 -jobs 4
+[Wed Jan 13 15:28:55 2021] Launched synth_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Jan 13 16:00:56 2021] Launched impl_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/impl_1/runme.log
+set_property is_global_include true [get_files  /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/build_files/system_wrapper.v]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Jan 13 16:14:42 2021] Launched synth_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Jan 13 16:23:03 2021] Launched impl_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/impl_1/runme.log
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.ENABLE_CLOCK_MONITOR {false} CONFIG.OVERRIDE_MMCM {true} CONFIG.MMCM_COMPENSATION {BUF_IN} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_bd_cells clk_wiz]
+endgroup
+save_bd_design
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/ui/bd_d47a5d21.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/ui/bd_d47a5d21.ui> 
+VHDL Output written to : /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/synth/system.vhd
+VHDL Output written to : /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/hdl/system_wrapper.vhd
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+Wrote  : </home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/ui/bd_d47a5d21.ui> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+Exporting to file /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/synth/system.hwdef
+[Wed Jan 13 16:31:39 2021] Launched synth_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 7333.715 ; gain = 0.000 ; free physical = 3475 ; free virtual = 6502
+launch_runs impl_1 -jobs 4
+[Wed Jan 13 16:42:09 2021] Launched impl_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.20 . Memory (MB): peak = 7341.145 ; gain = 0.000 ; free physical = 3831 ; free virtual = 6511
+INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7951.422 ; gain = 4.961 ; free physical = 3249 ; free virtual = 5930
+Restored from archive | CPU: 1.240000 secs | Memory: 21.135948 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7951.422 ; gain = 4.961 ; free physical = 3249 ; free virtual = 5930
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7951.422 ; gain = 0.000 ; free physical = 3250 ; free virtual = 5931
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRLC32E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 8147.113 ; gain = 813.398 ; free physical = 3143 ; free virtual = 5848
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 8147.113 ; gain = 0.000 ; free physical = 3060 ; free virtual = 5782
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 8159.262 ; gain = 6.938 ; free physical = 2694 ; free virtual = 5546
+report_ssn -name ssn_1
+INFO: [Designutils 20-2100] The following ports are excluded from SSN analysis because they are either Multi-Gigabit Transceiver or Processor System I/O. This is because all MGT and PS interfaces supported by these dedicated I/O have been qualified against the interface requirements. SelectIO banks have SSN analysis support as they are fully configurable as FPGA I/O.
+    1. DDR_dqs_p
+    2. DDR_addr
+    3. DDR_dq
+    4. DDR_ba
+    5. DDR_dqs_n
+    6. DDR_dm
+    7. FIXED_IO_mio
+    8. DDR_cas_n
+    9. DDR_ck_n
+    10. DDR_ck_p
+    11. DDR_cke
+    12. DDR_cs_n
+    13. DDR_odt
+    14. DDR_ras_n
+    15. DDR_reset_n
+    16. DDR_we_n
+    17. FIXED_IO_ddr_vrn
+    18. FIXED_IO_ddr_vrp
+    19. FIXED_IO_ps_clk
+    20. FIXED_IO_ps_porb
+    21. FIXED_IO_ps_srstb
+
+INFO: [Coretcl 2-1142] Start SSN Analysis...
+report_operating_conditions -grade -return_string
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jan 13 17:27:08 2021] Launched impl_1...
+Run output will be captured here: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/impl_1/runme.log
+current_project prototype
+run 1 s
+run: Time (s): cpu = 00:00:48 ; elapsed = 00:24:20 . Memory (MB): peak = 8189.098 ; gain = 4.000 ; free physical = 2493 ; free virtual = 5512
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 13 17:56:40 2021...

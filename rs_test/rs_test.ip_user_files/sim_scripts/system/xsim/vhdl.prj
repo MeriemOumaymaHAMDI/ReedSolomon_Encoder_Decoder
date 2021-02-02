@@ -1,0 +1,25 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_decoder_dma_0/sim/system_decoder_dma_0.vhd" \
+"../../../bd/system/ip/system_encoder_dma_0/sim/system_encoder_dma_0.vhd" \
+"../../../bd/system/ipshared/0c4f/src/gf.vhd" \
+"../../../bd/system/ipshared/0c4f/src/calcErrors.vhd" \
+"../../../bd/system/ipshared/0c4f/src/calcSyndromes.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rsUtil.vhd" \
+"../../../bd/system/ipshared/0c4f/src/chien_search.vhd" \
+"../../../bd/system/ipshared/0c4f/src/correctErrors.vhd" \
+"../../../bd/system/ipshared/0c4f/src/mea.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rsDecoder.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rsFeeder.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rsFifo.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rsOutputStage.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rs_ram.vhd" \
+"../../../bd/system/ipshared/0c4f/src/start2valid.vhd" \
+"../../../bd/system/ipshared/0c4f/src/rsDecoderWrapper.vhd" \
+"../../../bd/system/ip/system_rsDecoderWrapper_0_0/sim/system_rsDecoderWrapper_0_0.vhd" \
+"../../../bd/system/ipshared/be8f/src/rsEncoder.vhd" \
+"../../../bd/system/ipshared/be8f/src/rsEncoderWrapper.vhd" \
+"../../../bd/system/ip/system_rsEncoderWrapper_0_0/sim/system_rsEncoderWrapper_0_0.vhd" \
+"../../../bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" \
+"../../../bd/system/sim/system.vhd" \
+
+nosort

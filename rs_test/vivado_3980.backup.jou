@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan 12 16:24:31 2021
+# Process ID: 3980
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test
+# Command line: vivado
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.log
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd}
+generate_target Simulation [get_files /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd] -directory /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.ip_user_files/sim_scripts -ip_user_files_dir /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.ip_user_files -ipstatic_source_dir /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.cache/compile_simlib/modelsim} {questa=/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.cache/compile_simlib/questa} {ies=/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.cache/compile_simlib/ies} {xcelium=/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.cache/compile_simlib/xcelium} {vcs=/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.cache/compile_simlib/vcs} {riviera=/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source system_wrapper.tcl
+run all
+open_bd_design {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+create_project Adder /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/Adder -part xc7z020clg400-1
+add_files -norecurse {/home/mayma/Desktop/AdderTest/Adder32.v /home/mayma/Desktop/AdderTest/Adder32_Testbench.v}
+update_compile_order -fileset sources_1
+launch_simulation
+source Adder_TestBench.tcl
+restart
+run 5 us
+run 5 us
+create_project prototype /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype -part xc7z020clg400-1
+add_files -norecurse {/home/mayma/Downloads/simple_rs-master/vhdl/rs_ram.vhd /home/mayma/Downloads/simple_rs-master/vhdl/chien_search.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/mea.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFifo.vhd /home/mayma/Downloads/simple_rs-master/vhdl/gf.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsFeeder_tb.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsOutputStage.vhd /home/mayma/Downloads/simple_rs-master/vhdl/correctErrors.vhd /home/mayma/Downloads/simple_rs-master/vhdl/start2valid.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsEncoderWrapper.vhd /home/mayma/Downloads/simple_rs-master/vhdl/calcErrors.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsEncoder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsDecoder.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rs_tb.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsUtil.vhd /home/mayma/Downloads/simple_rs-master/vhdl/rsDecoderWrapper.vhd /home/mayma/Downloads/simple_rs-master/vhdl/calcSyndromes.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source rs_tb.tcl
+run 5 us
+run 10 us
+run 1000 us
+current_project rs_test
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

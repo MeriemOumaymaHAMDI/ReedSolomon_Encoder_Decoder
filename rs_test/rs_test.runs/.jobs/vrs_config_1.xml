@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_decoder_dma_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_decoder_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rsDecoderWrapper_0_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_rsDecoderWrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_encoder_dma_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_encoder_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rsEncoderWrapper_0_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_rsEncoderWrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_processing_system7_0_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_protocol_converter_2_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_axi_protocol_converter_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_protocol_converter_0_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_axi_protocol_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_proc_sys_reset_0_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_protocol_converter_5_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_axi_protocol_converter_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_protocol_converter_3_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_axi_protocol_converter_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_protocol_converter_4_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_axi_protocol_converter_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_protocol_converter_1_0_synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/system_axi_protocol_converter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_decoder_dma_0_synth_1"/>
+		<Parent Id="system_rsDecoderWrapper_0_0_synth_1"/>
+		<Parent Id="system_encoder_dma_0_synth_1"/>
+		<Parent Id="system_rsEncoderWrapper_0_0_synth_1"/>
+		<Parent Id="system_processing_system7_0_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_2_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_0_0_synth_1"/>
+		<Parent Id="system_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_5_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_3_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_4_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_1_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="system_decoder_dma_0_synth_1"/>
+		<Parent Id="system_rsDecoderWrapper_0_0_synth_1"/>
+		<Parent Id="system_encoder_dma_0_synth_1"/>
+		<Parent Id="system_rsEncoderWrapper_0_0_synth_1"/>
+		<Parent Id="system_processing_system7_0_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_2_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_0_0_synth_1"/>
+		<Parent Id="system_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_5_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_3_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_4_0_synth_1"/>
+		<Parent Id="system_axi_protocol_converter_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

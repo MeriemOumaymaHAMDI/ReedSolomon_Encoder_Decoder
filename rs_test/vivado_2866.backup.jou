@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 13 14:23:20 2021
+# Process ID: 2866
+# Current directory: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test
+# Command line: vivado
+# Log file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.log
+# Journal file: /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/prototype.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source rs_tb.tcl
+run 1000 us
+save_wave_config {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg
+set_property xsim.view /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg [get_filesets sim_1]
+save_wave_config {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/prototype/rs_tb_behav.wcfg}
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_project /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/rs_test/rs_test.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+set_property is_global_include true [get_files  /home/mayma/Downloads/simple_rs-master/zybo_vivado_2017.1/build_files/system_wrapper.v]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.ENABLE_CLOCK_MONITOR {false} CONFIG.OVERRIDE_MMCM {true} CONFIG.MMCM_COMPENSATION {BUF_IN} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_bd_cells clk_wiz]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+report_ssn -name ssn_1
+report_operating_conditions -grade -return_string
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project prototype
+run 1 s
+run 1000 ns
+close_sim
+close_project
